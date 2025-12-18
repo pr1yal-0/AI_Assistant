@@ -1,0 +1,90 @@
+# How to Run AI_Assistant
+
+Follow these steps to run the LangGraph AI Assistant locally.
+
+---
+
+## 1. Clone the Repository
+
+Anyone running the project must first clone it:
+
+bash:
+git clone https://github.com/pr1yal-0/AI_Assistant.git
+cd AI_Assistant
+
+
+---
+
+## 2. Set Up Python Environment
+
+Make sure Python 3.11 is installed. Then create a virtual environment:
+
+bash :
+python -m venv venv
+
+
+Activate the environment:
+
+- Windows (PowerShell):
+bash :
+venv\Scripts\activate
+
+- macOS / Linux:
+bash :
+source venv/bin/activate
+
+
+---
+
+## 3. Install Dependencies
+
+Install all required Python packages:
+
+bash :
+pip install --upgrade pip
+pip install -r requirements.txt
+
+
+---
+
+## 4. Configure Environment Variables (if any)
+
+If the project uses `.env` (for example, Ollama model settings), create a `.env` file in the project root:
+
+
+# .env
+OLLAMA_MODEL=your_model_name (MODEL_NAME=phi3)
+
+
+Replace `your_model_name` with the model you want to use.
+
+---
+
+## 5. Run the Streamlit App
+
+Start the app with:
+
+bash :
+streamlit run app.py
+
+
+Streamlit will show something like:
+
+
+Local URL: http://localhost:8501
+
+
+Open that URL in a browser to use the AI Assistant.
+
+---
+
+## 6. Deactivate Virtual Environment (Optional)
+
+When done, deactivate the environment:
+
+bash :
+deactivate
+
+
+---
+
